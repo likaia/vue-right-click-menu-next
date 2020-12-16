@@ -30,7 +30,7 @@ app.use(vueRightMenu);
 <script lang="ts">
 import { defineComponent } from "vue";
 // 导入插件需要的参数类型
-import { rightMenuType } from "vue-right-click-menu-next/dist/types/type/pluginsType";
+import { rightMenuType } from "vue-right-click-menu-next/dist/lib/type/pluginsType";
 export default defineComponent({
   computed: {
     rightMenuObj(): rightMenuType {
