@@ -1,4 +1,4 @@
-# vue-right-click-menu · [![npm](https://img.shields.io/badge/npm-v1.0.0-2081C1)]() [![yarn](https://img.shields.io/badge/yarn-v1.0.0-F37E42)]() [![github](https://img.shields.io/badge/GitHub-depositary-9A9A9A)]()
+# vue-right-click-menu-next · [![npm](https://img.shields.io/badge/npm-v1.0.0-2081C1)](https://www.npmjs.com/package/vue-right-click-menu-next) [![yarn](https://img.shields.io/badge/yarn-v1.0.0-F37E42)](https://yarnpkg.com/package/vue-right-click-menu-next) [![github](https://img.shields.io/badge/GitHub-depositary-9A9A9A)](https://github.com/likaia/vue-right-click-menu-next) [![](https://img.shields.io/github/issues/likaia/vue-right-click-menu-next)](https://github.com/likaia/vue-right-click-menu-next/issues) [![](	https://img.shields.io/github/forks/likaia/vue-right-click-menu-next)](https://github.com/likaia/vue-right-click-menu-next/network/members) [![](	https://img.shields.io/github/stars/likaia/vue-right-click-menu-next)](https://github.com/likaia/vue-right-click-menu-next/stargazers)
 支持vue3的浏览器右键菜单插件，效果图如下：
 
 ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0261ae22733144a6ac67ec16008355d2~tplv-k3u1fbpfcp-watermark.image)
