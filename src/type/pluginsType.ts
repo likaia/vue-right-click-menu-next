@@ -13,6 +13,7 @@ export type rightMenuObjType = {
   id: number;
   text: string | { status: boolean; content: string }; // 文本数组
   handler: Record<string, (...params: any) => void>; // 事件处理函数
+  parameter?: any; // 动态参数，调用时指令时可以传组件实例的data数据
 };
 
 // 右键菜单参数类型定义

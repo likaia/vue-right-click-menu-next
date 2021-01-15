@@ -49,6 +49,7 @@ export default {
         }
         const textArray = binding.value.text;
         const handlerObj = binding.value.handler;
+        const parameter = binding.arg;
         // 菜单选项与事件处理函数是否存在
         if (textArray == null || handlerObj == null) {
           throw "右键菜单内容与事件处理函数为必传项";
@@ -73,6 +74,10 @@ export default {
             handler: handlerArray[i],
             id: i + 1
           };
+          // 动态参数不为空则追加
+          if (parameter != null) {
+            menuObj.parameter = parameter;
+          }
           menuList.push(menuObj);
         }
         // 鼠标点的坐标
