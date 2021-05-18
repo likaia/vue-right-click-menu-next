@@ -1,6 +1,6 @@
 {
   "name": "vue-right-click-menu-next",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "支持vue3的右键菜单插件",
   "private": false,
   "main": "dist/vueRightMenuPlugin.common.js",

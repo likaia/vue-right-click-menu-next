@@ -1,4 +1,4 @@
-# vue-right-click-menu-next · [![npm](https://img.shields.io/badge/npm-v1.1.0-2081C1)](https://www.npmjs.com/package/vue-right-click-menu-next) [![yarn](https://img.shields.io/badge/yarn-v1.1.0-F37E42)](https://yarnpkg.com/package/vue-right-click-menu-next) [![github](https://img.shields.io/badge/GitHub-depositary-9A9A9A)](https://github.com/likaia/vue-right-click-menu-next) [![](https://img.shields.io/github/issues/likaia/vue-right-click-menu-next)](https://github.com/likaia/vue-right-click-menu-next/issues) [![](	https://img.shields.io/github/forks/likaia/vue-right-click-menu-next)](https://github.com/likaia/vue-right-click-menu-next/network/members) [![](	https://img.shields.io/github/stars/likaia/vue-right-click-menu-next)](https://github.com/likaia/vue-right-click-menu-next/stargazers)
+# vue-right-click-menu-next · [![npm](https://img.shields.io/badge/npm-v1.1.1-2081C1)](https://www.npmjs.com/package/vue-right-click-menu-next) [![yarn](https://img.shields.io/badge/yarn-v1.1.1-F37E42)](https://yarnpkg.com/package/vue-right-click-menu-next) [![github](https://img.shields.io/badge/GitHub-depositary-9A9A9A)](https://github.com/likaia/vue-right-click-menu-next) [![](https://img.shields.io/github/issues/likaia/vue-right-click-menu-next)](https://github.com/likaia/vue-right-click-menu-next/issues) [![](	https://img.shields.io/github/forks/likaia/vue-right-click-menu-next)](https://github.com/likaia/vue-right-click-menu-next/network/members) [![](	https://img.shields.io/github/stars/likaia/vue-right-click-menu-next)](https://github.com/likaia/vue-right-click-menu-next/stargazers)
 支持vue3的浏览器右键菜单插件，效果图如下：
 
 ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0261ae22733144a6ac67ec16008355d2~tplv-k3u1fbpfcp-watermark.image)
@@ -24,10 +24,8 @@ app.use(vueRightMenu);
 <template>
   <li
     class="row-panel"
-    v-for="(item, index) in msgList"
-    v-right-click:[index]="rightMenuObj"
+    v-right-click:[{id:19,bookid:1024}]="rightMenuObj"
   >
-  </li>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -49,11 +47,7 @@ export default defineComponent({
         ],
         handler: {
           checkingData(parameter) {
-            // parameter是可选的，每个方法都有这个参数
-            // 它是指令传递的动态参数
-            // 即[index]，index为当前组件实例的data数据
-            console.log("组件传递的参数", parameter);
-            console.log(obj.this.$store.state.token);
+            console.log(parameter);
             console.log("查看资料点击事件");
           },
           copyId() {
@@ -89,6 +83,7 @@ export default defineComponent({
   * 如果你想让某个选项无法点击，则传一个对象  
     * content 要显示的文字内容，字符串类型
     * status 是否禁用，boolean类型
+* 点击事件接受一个参数，具体写法可参考示例代码
 * handler 事件处理函数，函数的顺序要与text数组内的文本顺序相对应
 
 ## 写在最后
